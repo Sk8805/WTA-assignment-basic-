@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML, CSS and Javascript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .header-title {
+            font-size: 40px;
+            color: white;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #ff5733, #ffc300, #28a745, #007bff, #6f42c1);
+            background-size: 500%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientMove 5s linear infinite, scrollText 12s linear infinite;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+        @keyframes gradientMove {
+            0% { background-position: 0% }
+            100% { background-position: 100% }
+        }
+        @keyframes scrollText {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .header-container {
+            overflow: hidden;
+            padding: 15px 0;
+        }
+        header, main, footer {
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 40px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+            font-size: 1.2em;
+        }
+        img {
+            max-width: 30%;
+            height: auto;
+            margin-top: 10px;
+        }
+        .box{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-top: 40px;
+            border: 1px black solid;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 20px;
+        }
+        footer{
+            border: black 1px solid;
+            background-color: black;
+            color: white;
+            margin-bottom: -20px;
+            padding-top: 10px;
+        }
+        .foottext{
+            opacity: 0.7;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="header-title">HTML, CSS and Javascript</h1>
+        </div>
+    </header>
+
+
+    <main>
+        <section>
+            <div class="box">
+                <img src="html5.png" alt="HTML5 Logo">
+            </div>
+            <h2>HTML Elements</h2>
+            <ol>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" target="_blank">&lt;div&gt;</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="_blank">&lt;p&gt;</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">&lt;a&gt;</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank">&lt;img&gt;</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button" target="_blank">&lt;button&gt;</a></li>
+            </ol>
+        </section>
+
+        <section>
+            <div class="box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3 Logo">
+            </div>
+            <h2>CSS Elements</h2>
+            <ol>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors" target="_blank">Selectors</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">Properties</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements" target="_blank">Pseudo-elements</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex" target="_blank">Flexbox</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank">Grid</a></li>
+            </ol>
+        </section>
+
+        <section>
+            <div class="box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo">
+            </div>
+            <h2>Javascript Elements</h2>
+            <ol>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types" target="_blank">Variables & Datatypes</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions" target="_blank">Functions</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators" target="_blank">Operators</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">Arrays</a></li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <center><p class="foottext">&copy; 2025 HTML, CSS, and JavaScript Learning Page</p></center>
+        <center><p class="foottext">&copy; Soham Kundu</p></center>
+    </footer>
+</body>
+</html>
